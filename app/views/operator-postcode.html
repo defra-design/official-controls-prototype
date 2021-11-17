@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  H1
+{% endblock %}
+
+{% block beforeContent %}
+    {% include "includes/phase-banner.html" %}
+    {% include "includes/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <form action="/operator-address" method="post" novalidate>
+
+                <h1 class="govuk-heading-l">Postcode H1 placeholder</h1>
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="width-10">
+                    Postcode
+                  </label>
+                  <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text"></div>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        If the look up doesn't work
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      Enter address manually
+                      <br>Enter non UK address                    </div>
+                  </details>
+
+
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

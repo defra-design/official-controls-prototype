@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  H1
+{% endblock %}
+
+{% block beforeContent %}
+    {% include "includes/phase-banner.html" %}
+    {% include "includes/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+
+
+      <div class="govuk-width-container">
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <form action="/form-handler" method="post" novalidate>
+
+                <h1 class="govuk-heading-l">Address H1 placeholder</h1>
+
+                <p class="govuk-body govuk-!-margin-bottom-6">
+                <span class="govuk-!-font-weight-bold">Postcode</span><br>
+                TS1 1AB<br>
+                <a class="govuk-link govuk-link--no-visited-state" href="operator-postcode">
+                    Change
+                </a>
+            </p>
+
+
+
+                  <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Label placeholder
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published" selected>9 addresses found</option>
+    <option value="updated">1 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="views">2 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="comments">3 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="updated">4 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="views">5 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="comments">6 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="updated">7 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="views">8 Station Road, Middlesbrough TS1 1AB</option>
+    <option value="comments">9 Station Road, Middlesbrough TS1 1AB</option>
+  </select>
+</div>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                    <summary class="govuk-details__summary">
+                      <span class="govuk-details__summary-text">
+                        If the look up doesn't work
+                      </span>
+                    </summary>
+                    <div class="govuk-details__text">
+                      Enter address manually
+                      <br>Enter non UK address                    </div>
+                  </details>
+
+
+                <button class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
